@@ -1,0 +1,395 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+:root {
+    --active: yellow;
+}
+
+
+/* Header */
+
+.header_container {
+    grid-template-columns: auto auto auto;
+    display: grid;
+    padding: 50px 0;
+    padding-left: 150px;
+}
+
+.header_name {
+    letter-spacing: 2px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.header_name p {
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+.header_call {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-weight: 200;
+}
+
+.header_call p {
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding-top: 5px;
+}
+
+.header_work {
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header_work p {
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+
+/* Navbar Section */
+
+.navbar {
+    height: 50px;
+    background: green;
+    align-items: center;
+    padding: 0 100px;
+    display: flex;
+}
+
+.nav__name_zoo {
+    font-family: monospace;
+    letter-spacing: 2px;
+    color: #fff;
+    display: none;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.navbar_ul1 {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.navbar_ul1 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    cursor: -webkit-grab;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar_ul1 a:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: .1s;
+}
+
+.navbar_ul1 a:active {
+    cursor: -webkit-grabbing;
+}
+
+
+/* Link For header  */
+
+.for_header {
+    z-index: 1000;
+    position: fixed;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    background: green;
+    width: 35px;
+    height: 35px;
+    transition: .2s;
+    border-radius: 50%;
+    border: 2px solid rgb(54, 142, 184);
+}
+
+.for_header a {
+    color: #fff;
+}
+
+.for_header:hover {
+    background: #000;
+    border: 1px solid white;
+}
+
+
+/* Qo'shimcha Malumotlar */
+
+.nav_container {
+    display: none;
+    margin-left: auto;
+    position: relative;
+    z-index: 1000;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .line1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.nav__more_menu {
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    right: -20px;
+    top: 44px;
+    padding: 0;
+    margin: 0;
+    transition: .4s;
+    text-transform: uppercase;
+    transform: translateX(300px);
+    background: rgb(0, 155, 0);
+}
+
+.nav__lists {
+    height: 10%;
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    transition: .2s;
+}
+
+.nav__lists:hover {
+    background: rgba(1, 105, 1, 0.897);
+}
+
+.nav__more_menu a {
+    color: #fff;
+}
+
+.nav__more_menu a:hover {
+    text-decoration: underline;
+    color: rgb(197, 197, 197);
+}
+
+.change .nav__more_menu {
+    transform: translateX(0);
+}
+
+
+/* Footer */
+
+.footer {
+    height: 15vh;
+    background: #222;
+}
+
+.internet {
+    font-size: 25px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+
+/* Circle */
+
+.circle {
+    margin: 12px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #222;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transition: .4s;
+    align-items: center;
+}
+
+.circle a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.circle a:hover {
+    color: #fff;
+}
+
+
+/* telegram */
+
+.tg:hover {
+    background: #23A0DC;
+}
+
+.tg a {
+    color: #23A0DC;
+}
+
+
+/* instagram */
+
+.insta:hover {
+    background: linear-gradient(45deg, #FFB24A, #E16447, #A53594, #5556CB);
+}
+
+.insta a {
+    color: #f1283d;
+    transition: .4s;
+}
+
+
+/* Facebook */
+
+.fb a {
+    color: #3B5998;
+}
+
+.fb:hover {
+    background: #3B5998;
+}
+
+
+/* copyright */
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: sans-serif;
+    padding: 0 70px;
+    line-height: 50px;
+    color: rgb(110, 110, 110);
+    background: rgb(26, 26, 26);
+}
+
+.copyright_link a {
+    color: rgb(151, 151, 151);
+}
+
+
+/* Responsive part */
+
+@media (max-width: 991.8px) {
+    .navbar {
+        padding: 0 20px;
+    }
+    .header_container {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 799.8px) {
+    .nav_container {
+        display: flex;
+    }
+    .navbar_ul1 {
+        display: none;
+    }
+    .nav__name_zoo {
+        display: block;
+    }
+}
+
+@media (max-width: 699.9px) {
+    .header_container {
+        padding-top: 20px;
+        grid-template-columns: auto;
+    }
+    .all {
+        margin-top: 30px;
+    }
+    .copyright {
+        display: block;
+    }
+}
+
+@media (max-width: 475.9px) {
+    .nav__more_menu {
+        font-size: 14px;
+    }
+    .nav__name_zoo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 372.9px) {
+    .nav__name_zoo {
+        display: none;
+    }
+    .header_container {
+        padding-left: 20px;
+        font-size: 17px;
+        font-size: 15px;
+    }
+    .copyright {
+        padding: 0 40px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 284.8px) {
+    .copyright {
+        padding: 0 30px;
+        font-size: 14px;
+    }
+}

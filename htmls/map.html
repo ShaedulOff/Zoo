@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XARITA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/map.css">
+</head>
+
+<body>
+    <!-- Header Sectiion -->
+
+    <section id="header">
+        <div class="header_container">
+            <div class="all header_name">
+                <h2>termiz</h2>
+                <p>Hayvonot Bog'i</p>
+            </div>
+            <div class="all header_call">
+                <h3><i class="fas fa-phone-alt"></i> Telefon nomer:</h3>
+                <p>76 223 01 32</p>
+            </div>
+            <div class="all header_work">
+                <h3><i class="fas fa-clock"></i> Dushanba - Juma</h3>
+                <p>08:00am - 17:00pm</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navbar Section -->
+
+    <section id="navbar_section">
+        <nav class="navbar">
+            <div class="nav__name_zoo">
+                <h1>termiz hayvonot bog'i</h1>
+            </div>
+            <ul class="navbar_ul1">
+                <li><a href="../index.html">bosh sahifa</a></li>
+                <li><a href="about.html">hayvonot bog'i haqida</a></li>
+                <li><a href="gallery.html">galareya</a></li>
+                <li><a style="color: var(--active)" href="#">xarita</a></li>
+                <li><a href="contact.html">bog'lanish</a></li>
+            </ul>
+            <!-- menu res -->
+            <div class="nav_container">
+                <div onclick="More(this)">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                    <ul class="nav__more_menu">
+
+                        <a href="../index.html">
+                            <li class="nav__lists">bosh sahifa</li>
+                        </a>
+                        <a href="about.html">
+                            <li class="nav__lists">hayvonot bog'i haqida</li>
+                        </a>
+                        <a href="gallery.html">
+                            <li class="nav__lists">galareya</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__lists">xarita</li>
+                        </a>
+                        <a href="contact.html">
+                            <li class="nav__lists">bog'lanish</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                function More(x) {
+                    x.classList.toggle("change");
+                }
+            </script>
+        </nav>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map">
+        <div class="text">
+            <div class="items"><i class="fas fa-map-marker-alt"></i> Термез, ул. Чоршанби Сафарова, 71</div>
+            <div class="items"><i class="fas fa-clock"></i> Открыто: 8:00-17:00</div>
+            <div class="items"><i class="fas fa-phone-alt"></i>76 223 65 57, 76 223 65 40</div>
+        </div>
+        <iframe class="map_locations" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.405208271857!2d67.25639288413427!3d37.21435462009671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f352e3e604e07d1%3A0xaf373f8df8287f!2z0JfQvtC-0L_QsNGA0Lo!5e0!3m2!1sru!2s!4v1627955884173!5m2!1sru!2s"
+            loading="lazy"></iframe>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <div class="footer_container">
+            <div class="internet">
+                <div class="tg circle">
+                    <a href="https://t.me/termiz_zoo_rasmiy" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+                <div class="fb circle">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100058687850061"><i class="fa fa-facebook-f"></i></a>
+                </div>
+                <div class="insta circle">
+                    <a href="https://instagram.com/termizzoo"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&#169;2021 Termiz Hayvonot Bog'i</p>
+                <p>All Right Reserved</p>
+                <p class="copyright_link">Creator <a target="_blank" href="https://t.me/Shaedul_Off">Shaedul_Off</a></p>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

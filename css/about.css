@@ -1,0 +1,145 @@
+.footer {
+    margin-top: 60px;
+}
+
+
+/* direct */
+
+.direct {
+    height: 50px;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    background: rgb(70, 197, 219);
+}
+
+.name {
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+
+/* About */
+
+.about_section {
+    display: block;
+    justify-content: center;
+}
+
+.about_container {
+    margin: auto;
+    margin-top: 60px;
+    padding: 50px 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 149);
+    width: 80%;
+}
+
+.title {
+    font-family: sans-serif;
+    width: 300px;
+    margin: auto;
+    padding-bottom: 30px;
+    color: rgb(59, 59, 59);
+    text-align: center;
+}
+
+.title h3 {
+    padding-bottom: 30px;
+}
+
+.matn {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.space {
+    content: " ";
+    padding-right: 30px;
+}
+
+
+/* container 1 */
+
+.about_container1 {
+    margin: auto;
+    margin-top: 60px;
+    padding: 50px 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 149);
+    width: 80%;
+}
+
+.matn1 {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+
+/* responsive part */
+
+@media (max-width: 950px) {
+    .about_container,
+    .about_container1 {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .matn,
+    .matn1 {
+        font-size: 20px;
+    }
+    .about_container,
+    .about_container1 {
+        margin-top: 40px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 485px) {
+    .matn,
+    .matn1 {
+        font-size: 17px;
+    }
+    .direct {
+        height: 30px;
+        letter-spacing: 0;
+    }
+    .name {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 399.9px) {
+    .about_container,
+    .about_container1 {
+        padding: 15px;
+    }
+    .matn,
+    .matn1 {
+        font-size: 15px;
+    }
+    .title {
+        width: 250px;
+    }
+}
+
+@media (max-width: 311.9px) {
+    .matn,
+    .matn1 {
+        font-size: 13px;
+    }
+    .title {
+        width: auto;
+    }
+    .direct {
+        height: auto;
+    }
+    .name {
+        text-align: center;
+        font-size: 22px;
+    }
+}
